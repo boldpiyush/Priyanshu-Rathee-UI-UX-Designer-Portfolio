@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yum Slice Case Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="case-image">
+
+  <!-- BACK BUTTON -->
+  <button class="back-btn" onclick="goBack()" aria-label="Go Back">←</button>
+
+  <!-- CASE STUDY IMAGE -->
+  <img
+    id="caseImg"
+    src="images/CS1.png"
+    alt="Yum Slice case study"
+    loading="lazy"
+  >
+
+  <!-- FALLBACK -->
+  <div class="img-fallback" id="imgFallback">
+    <p>Image couldn’t load.</p>
+    <button onclick="openImageSource()">View image</button>
+  </div>
+
+</section>
+
+<!-- FULLSCREEN IMAGE OVERLAY -->
+<div class="image-overlay" id="imageOverlay">
+  <button class="close-btn" onclick="closeImage()">✕</button>
+  <img src="images/CS1.png" alt="Full case study image">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
